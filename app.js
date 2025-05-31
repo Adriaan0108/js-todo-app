@@ -94,7 +94,7 @@ const updateTaskList = () => {
     list.appendChild(item);
   });
 
-  updateStats();
+  // updateStats();
   saveTasks();
 };
 
