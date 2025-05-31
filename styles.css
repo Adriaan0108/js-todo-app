@@ -1,3 +1,11 @@
+:root {
+  --background: #000430;
+  --secondaryBackground: #171c48;
+  --text: #fff;
+  --purple: #828dff;
+  --teal: #24feee;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -70,7 +78,7 @@ form {
 input {
   padding: 16px;
   background-color: var(--secondaryBackground);
-  border: 1px solid --purple;
+  border: 1px solid var(--purple);
   width: 100%;
   flex: 1;
   border-radius: 10px;
@@ -172,36 +180,4 @@ button {
     height: 20px;
     margin-left: 10px;
   }
-}
-
-/* Dark mode support (if device prefers dark mode) */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1a1a1a;
-    color: #ffffff;
-  }
-
-  .container {
-    background-color: #2d2d2d;
-    border: 1px solid #404040;
-  }
-
-  input {
-    background-color: #3d3d3d;
-    color: #ffffff;
-    border: 1px solid #555;
-  }
-
-  .taskItem {
-    background-color: #3d3d3d;
-    border: 1px solid #555;
-  }
-}
-
-:root {
-  --background: #000430;
-  --secondaryBackground: #171c48;
-  --text: #fff;
-  --purple: #828dff;
-  --teal: #24feee;
 }
